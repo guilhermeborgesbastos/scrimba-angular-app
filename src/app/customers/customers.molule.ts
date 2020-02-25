@@ -1,5 +1,6 @@
 import { NgModule }     from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { FormsModule }   from '@angular/forms';  // Contains the [(ngModule)]
+import { CommonModule } from '@angular/common';  // COntains directives as *ngFor, *ngIf, etc...
 
 import { SharedModule } from '../shared/shared.module';
 import { CustomersComponent } from './customers.component';
@@ -8,7 +9,7 @@ import { FilterTextboxComponent } from './customers-list/filter-textbox.componen
 
 
 @NgModule({
-  imports:      [ CommonModule, SharedModule],
+  imports:      [ CommonModule, SharedModule, FormsModule ],
   declarations: [ CustomersComponent, CustomersListComponent, FilterTextboxComponent ],
   exports: [ CustomersComponent ]
 })
