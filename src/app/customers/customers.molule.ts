@@ -8,10 +8,11 @@ import { CustomersListComponent } from './customers-list/customers-list.componen
 import { FilterTextboxComponent } from './customers-list/filter-textbox.component';
 
 import { AsyncObservablePipeComponent } from '../clock/clock.async.component';
+import { CustomersRoutingModule } from './customers-routing.module';
 
 
 @NgModule({
-  imports:      [ CommonModule, SharedModule, FormsModule ],
+  imports:      [ CommonModule, SharedModule, FormsModule, CustomersRoutingModule ],
   declarations: [ CustomersComponent, CustomersListComponent, FilterTextboxComponent, AsyncObservablePipeComponent ],
   exports: [ CustomersComponent ]
 })
